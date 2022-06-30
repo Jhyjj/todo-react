@@ -1,38 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 .App {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  padding: 10px;
+  font-family: 'Gowun Batang', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h2{
+  font-size: 42px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.done{
+  text-decoration: line-through;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App input{
+  width: 70%;
+  height: 25px;
+  outline: none;
+  border: none;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.App button{
+  outline: none;
+  border: none;
+  width: 25px;
+  height: 25px;
+  background: initial;
+  line-height: 25px;
+  color: #fff;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App>div:nth-child(1){
+  margin-bottom: 20px;
+}
+
+.App>div:nth-child(2)>div{
+  margin: 0 auto;
+  width: 65%;
+  padding: 5px 0;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.App>div:nth-child(2)>div button{
+  position: absolute;
+  right: 10px;
 }
